@@ -46,3 +46,17 @@ def updateMouse():                                                          #- A
     MOUSE_Y = (mouseY - TRANSLATE_Y - height/2)
 
 #------------------------------------------------------
+
+def pointInBox(point_x, point_y, entitie):                                  #- enviar valores X y Y para comparar si esta dentro de una entidad
+    """Verifica si un punto esta dentro dela HB de una entidad"""
+    return (entitie.hb_minX <= point_x <= entitie.hb_maxX and
+            entitie.hb_minY <= point_y <= entitie.hb_maxY)
+    
+#------------------------------------------------------
+
+def boxInBox(A, B):
+    """Verifica si una entidad tiene contacto con otra"""
+    return (A.hb_minX <= B.hb_maxY and
+            A.hb_maxX >= B.hb_minX and
+            A.hb_minY <= B.hb_maxY and
+            A.hb_maxY >= B.hb_minY)

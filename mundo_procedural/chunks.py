@@ -300,7 +300,7 @@ class Chunk():
                 entities.plant(ex,ey,"Tree")
             if ruido == 1:
                 if int(random(0,2))==1:
-                    entities.plant(ex,ey,"Platano")
+                    entities.plant(ex,ey,"Platano")#######
         
         
     def drawChunk(self):
