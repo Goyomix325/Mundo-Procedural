@@ -1,0 +1,14 @@
+# Mundo Procedural en Processing.py
+
+Este proyecto usa **Processing.py** para generar mundos de manera procedural.
+
+## Instalación
+1. descarga processing.py 3.5.4 (version python)
+
+
+2. Clona el repositorio:
+
+   ```bash
+   git clone https://github.com/Goyomix325/Mundo-Procedural.git
+   cd mundo_procedural
+
