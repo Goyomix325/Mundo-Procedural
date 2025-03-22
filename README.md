@@ -10,8 +10,9 @@ El objetivo de este proyecto es desarrollar un **algoritmo de generación proced
 ##Descripción General
 
 El mundo esta generado medianto Chunks, que son pequeñás porciones del mundo de 16X16 Casillas, esto con el objetivo de cargar de manejar de manera eficiente el mundo, cada casilla tiene un valor definido por el algoritmo de "[Perlin noise](https://es.wikipedia.org/wiki/Ruido_Perlin)".
-[ejemplo Chunks](images/chunks.png)
-
+<div style="text-align: center;">
+<img src="images/chunks.png" alt="Imagen de ejemplo" width="300" />
+</div>
 
 
 
