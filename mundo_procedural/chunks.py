@@ -4,9 +4,6 @@ import Global as G
 #-----{PERLIN VARS}----------
 
 escala = 200.0
-octaves = 6
-persistence = 0.5
-lacunarity = 3.0
 valorA = 10000
 
 SEED = 134267920
@@ -17,7 +14,7 @@ noiseDetail(6, 0.5)
 
 #----------------------------
 
-ZOOM = 1
+ZOOM    = 1
 CASILLA = 25
 CHUNK   = CASILLA * 16
 
@@ -47,8 +44,9 @@ def loadTextures():
     textures.append(loadImage("assets/tiles/snow.png"))
     textures[4].resize(CASILLA,CASILLA)
     
-    stone_decos.append(loadImage("assets/deco/stone/0.png"))############3 error
+    stone_decos.append(loadImage("assets/deco/stone/0.png"))
     stone_decos[0].resize(CASILLA,CASILLA)
+    
     grass_decos.append(loadImage("assets/deco/grass/0.png"))
     grass_decos[0].resize(CASILLA,CASILLA)
     grass_decos.append(loadImage("assets/deco/grass/1.png"))
@@ -257,6 +255,7 @@ class Chunk():
                                       
                 elif ruido > 0.39:#--------- Tierra
                     i = 2
+                    
                     j = int(random(0,1000))
                     if    j ==  0: detail = grass_decos[0]
                     elif  j ==  1: detail = grass_decos[1]
@@ -292,7 +291,7 @@ class Chunk():
         self.IMG.endDraw()
         
         n = int(random(0,20))
-        
+
         for _ in range(n):
             ex = int(random(self.x1,self.x2))
             ey = int(random(self.y1,self.y2))
